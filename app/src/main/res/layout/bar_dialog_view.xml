@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="400dp"
+    android:background="@drawable/bar_dialog_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="40sp"
+        android:text="@string/register_title"
+        android:textColor="#2B2BD1"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black3" >
+
+        <EditText
+            android:id="@+id/bar_register_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="0.6dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="@string/register_title"
+            android:inputType="number"
+            android:paddingLeft="8dp"
+            android:text=""
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/register_xinxi1"
+        android:textColor="#2B2BD1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/register_tele"
+        android:textColor="#2B2BD1"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bar_register_sure"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bar_sure_button"
+            android:text="@string/sure"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/bar_register_cancle"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/bar_cancle_button"
+            android:text="@string/cancle"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

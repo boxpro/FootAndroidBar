@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="80dp"
+    android:layout_marginRight="80dp"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/bar_main_code_item"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:text="@string/roomCode"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/bar_main_time_item"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/bar_main_code_item"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/time"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bar_main_count_item"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/bar_main_time_item"
+        android:gravity="center_vertical|center_horizontal"
+        android:singleLine="true"
+        android:text="@string/count"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/bar_main_handle_ll"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal|center_vertical" >
+
+        <Button
+            android:id="@+id/bar_main_sure_item"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bar_sure_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:singleLine="true"
+            android:text="@string/shoudao"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bar_main_messager_item"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@id/bar_main_handle_ll"
+        android:layout_toRightOf="@id/bar_main_count_item"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/messager"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</RelativeLayout>
